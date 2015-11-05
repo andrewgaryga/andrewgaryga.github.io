@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<!-- 	<link rel="stylesheet" href="libs/animate/animate.css"> -->
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+
+ <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">andrewgaryga.com</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+		  <li><a href="#header">Home</a></li>
+		  <li><a href="#portfolio">Portfolio</a></li>
+		  <li><a href="#education">Education</a></li>
+		  <li><a href="#contact">Contact</a></li>
+	  </ul>
+	</div>
+  </div>
+</nav>
+	
+	<section id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-3">
+					<ul class="head_text">
+						<li><a href="#header">andrewgaryga.com</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-7">
+					<ul class="text-right">
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">				
+				<div class="col-lg-offset-1 col-lg-3"><img src="img/photo.jpg" alt="my photo here" class="img-circle"> </div>
+				<div class="col-lg-7">
+					<h1>Hello, my name is Andrew Garyga, and I am web developer from Ukraine,</h1><p> I'm in love with responsive clean code and javascript.<br>
+					I will use my knowledge for your projects <i>with a lot of joy</i></p>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+	</section>	
+	
+		<!-- portfolio -->
+		
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-center">Portfolio</h2>
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="controls text-center">
+						<button class="btn btn_default filter" data-filter="all">Show All</button>
+						<button class="btn btn_default filter"  data-filter=".category-1">Desighn</button>
+						<button class="btn btn_default filter" data-filter=".category-2">Front end</button>
+						<button class="btn btn_default filter" data-filter=".category-3">Wordpress</button>
+						<button class="btn btn_default filter" data-filter=".category-4">JavaScript</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="portfolio_wrap">
+		<div id="Container" class="container">
+			<div class="row  porfolio_wrap">
+				<div class="col-lg-4">   	  	
+					<div class="mix category-1" data-myorder="1">
+						<div class="portfolio-item">
+							<a href="#whalestudio" class="portfolio-link" data-toggle="modal">
+								<div class="caption">
+									<div class="caption-content">
+										WhaleStudio<br><div class="search_wrap text-center"><span class="glyphicon glyphicon-search"></span></div>
+									</div>
+								</div>
+								<img src="img/portfolio/whalestudio_thumbnail.png" class="img-responsive" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">   	  	
+					<div class="mix category-1" data-myorder="1">
+						<div class="portfolio-item">
+							<a href="#velofan" class="portfolio-link" data-toggle="modal">
+								<div class="caption">
+									<div class="caption-content">
+										Velofan<br><div class="search_wrap text-center"><span class="glyphicon glyphicon-search"></span></div>
+									</div>
+								</div>
+								<img src="img/portfolio/velofan_thumbnail.png" class="img-responsive" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">   	  	
+					<div class="mix category-2" data-myorder="1">
+						<div class="portfolio-item">
+							<a href="#prospekt" class="portfolio-link" data-toggle="modal">
+								<div class="caption">
+									<div class="caption-content">
+										Prospekt<br><div class="search_wrap text-center"><span class="glyphicon glyphicon-search"></span></div>
+									</div>
+								</div>
+								<img src="img/portfolio/prospekt_thumbnail.png" class="img-responsive" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+		</div>
+		  
+		  <div class="gap"></div>
+		  <div class="gap"></div>
+		  		<hr>
+		</div>
+
+	</div>
+
+		
+	</section>
+		
+		<!-- Education -->
+	<section id="education">
+		<div class="container">
+			<div class="row">
+				<h2 class="text-center">Education</h2>
+				<div class="col-lg-4 col-lg-push-7">
+					<p class="text-center">Graduaded at Chernihiv State Technological University.<br>Studying <i>at web.</i></p>
+				</div>
+
+				<div class="col-lg-7 col-lg-pull-4">
+					<img src="img/knowledges/bootstrap_w3.jpg" alt="" class="">
+					<img src="img/knowledges/javascript_w3.jpg" alt="" class="">
+					<img src="img/knowledges/jquery_w3.jpg" alt="" class="">
+					<img href="#" src="img/knowledges/bootstrap_upwork.jpg" alt="" class="second_row">
+				</div>
+			</div>
+			
+		</div>
+
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<hr>
+				<h2 class="text-center">Contact</h2>
+				<div class="col-lg-6 col-sm-12">
+					<p class="form_title">Callback form</p>
+					<form role="form" class="form-horizontal form_border" id="form" action="//formspree.io/andrewgaryga@gmail.com" method="POST">
+						<fieldset>
+							<div class="form-group">
+								  <div class="col-lg-6 col-sm-6">
+									<label for="name" class="control-label" placeholder="Name">Your name:</label>
+									<input class="form-control" id="name" placeholder="Name" type="name">
+								  </div>
+								  <div class="col-lg-6 col-sm-6">
+									<label for="email" class="control-label">Email address</label>
+									<input class="form-control" id="email" placeholder="Email" type="email" name="_replyto">
+								  </div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-12 control-label text-left" for="message">Ask a question or leave a message</label>
+									<div class="col-lg-12 col-sm-12">
+										<textarea class="form-control" id="message" rows="6" type="text" name="name"></textarea>
+									</div>
+							</div>
+
+							<div class="form-group">			
+								<div class="col-lg-6 col-sm-6 col-xs-6">
+									<button type="submit" value="Send" class="btn btn-default">Send a letter</button>		
+								</div>
+							</div>							
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-lg-offset-1 col-lg-4">
+					<p class="form_title">Contact Information:</p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row">
+								<div class="contact-item">
+									<div class="col-lg-2">
+										<img src="img/skype.png" alt="">
+									</div>
+									<div class="col-lg-8"><p>pony.tale</p></div>
+								</div>								
+							</div>
+							<div class="row">
+								<div class="contact-item">
+									<div class="col-lg-2">
+										<img src="img/gmail.png" alt="">
+									</div>
+									<div class="col-lg-8"><p>andrewgaryga@gmail.com</p></div>
+								</div>								
+							</div>
+							
+							<div class="row">
+								<div class="contact-item">
+									<div class="col-lg-2">
+										<img src="img/vk.png" alt="">
+									</div>
+									<div class="col-lg-8"><a href="http://vk.com/id192918454"><p>vk.com/id192918454</p></a></div>
+								</div>								
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="shadow_box"></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-lg-offset-0">
+						<ul class="head_text">
+							<li><a href="#home">andrewgaryga.com</a></li>
+						</ul>
+				</div>
+
+				<div class="col-lg-offset-4 col-lg-5">
+						<ul>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Portfolio Modals -->
+	<div class="portfolio-modal modal fade" id="whalestudio" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>WhaleStudio</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/whalestudio_portfolio.jpg" class="img-responsive img-centered" alt="">
+							<p>You can visit this web site from link on below</p>
+							<ul class="list-inline item-details">
+								<li>Visit site:
+									<strong><a href="http://startbootstrap.com">whalestudio.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="velofan" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Velofan</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/velofan_portfolio.jpg" class="img-responsive img-centered" alt="">
+							<p>You can visit this website from link on below.</p>
+							<ul class="list-inline item-details">
+								<li>Visit site:
+									<strong><a href="http://startbootstrap.com">whalestudio.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="portfolio-modal modal fade" id="prospekt" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Prospect</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/prospekt_portfolio.jpg" class="img-responsive img-centered" alt="">
+							<p>You can visit this website from link on below.</p>
+							<ul class="list-inline item-details">
+								<li>Visit site:
+									<strong><a href="#">not hosted yet</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Portfolio Modals -->
+	<div class="portfolio-modal modal fade" id="whalestudio" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>WhaleStudio</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/whalestudio_portfolio.jpg" class="img-responsive img-centered" alt="">
+							<p>You can visit this website from link on below.</p>
+							<ul class="list-inline item-details">
+								<li>Visit site:
+									<strong><a href="http://startbootstrap.com">whalestudio.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="velofan" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Velofan</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/velofan_portfolio.jpg" class="img-responsive img-centered" alt="">
+							<p>Click to view full height picture or visit site from link on below</p>
+							<ul class="list-inline item-details">
+								<li>Visit site:
+									<strong><a href="http://startbootstrap.com">whalestudio.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="portfolio-modal modal fade" id="prospekt" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Prospect</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/prospekt_portfolio.jpg" class="img-responsive img-centered" alt="">
+							<p>Click to view full height picture or visit site from link on below</p>
+							<ul class="list-inline item-details">
+								<li>Visit site:
+									<strong><a href="#">not hosted yet</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hidden"></div>
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.mixitup.js"></script>
+	
+
+	
+</body>
+</html>
