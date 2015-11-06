@@ -4,6 +4,26 @@ $(document).ready(function() {
 
 	$(".controls .btn").addClass("animated bounce");
 
+	 // Add smooth scrolling on all links inside the navbar
+	 $("ul li a").on('click', function(event) {
+
+		 // Prevent default anchor click behavior
+		 event.preventDefault();
+
+		 // Store hash
+		 var hash = this.hash;
+
+		 // Using jQuery's animate() method to add smooth page scroll
+		 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		 $('html, body').animate({
+			 scrollTop: $(hash).offset().top
+		 }, 800, function(){
+		
+			 // Add hash (#) to URL when done scrolling (default click behavior)
+			 window.location.hash = hash;
+		 });
+	 });
+
 	$(window).scroll(function() {
 	    if ($(".navbar").offset().top > 80) {
 	        $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -11,6 +31,28 @@ $(document).ready(function() {
 	        $(".navbar-fixed-top").removeClass("top-nav-collapse");
 	    }
 	});
+
+
+	$("#header a.portfolio").hover(function(){
+	    $("#header a.portfolio img").css("opacity", ".4");
+	}, function(){
+    	$("#header a.portfolio img").css("opacity", "0");
+
+	}); 
+
+	$("#header a.education").hover(function(){
+	    $("#header a.education img").css("opacity", ".4");
+	}, function(){
+    	$("#header a.education img").css("opacity", "0");
+
+	}); 
+
+	$("#header a.contact").hover(function(){
+	    $("#header a.contact img").css("opacity", ".4");
+	}, function(){
+    	$("#header a.contact img").css("opacity", "0");
+
+	}); 
 
 	// $(".caption-content span").on('hover').addClass("animated bounce");
 	$(".caption-content .search_wrap").hover(function(){
@@ -36,56 +78,7 @@ $(document).ready(function() {
 
 	}); 
 
-	 // Add smooth scrolling on all links inside the navbar
-	 $("ul li a").on('click', function(event) {
 
-		 // Prevent default anchor click behavior
-		 event.preventDefault();
-
-		 // Store hash
-		 var hash = this.hash;
-
-		 // Using jQuery's animate() method to add smooth page scroll
-		 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		 $('html, body').animate({
-			 scrollTop: $(hash).offset().top
-		 }, 800, function(){
-		
-			 // Add hash (#) to URL when done scrolling (default click behavior)
-			 window.location.hash = hash;
-		 });
-	 });
-
-	// //Цели для Яндекс.Метрики и Google Analytics
-	// $(".count_element").on("click", (function() {
-	// 	ga("send", "event", "goal", "goal");
-	// 	yaCounterXXXXXXXX.reachGoal("goal");
-	// 	return true;
-	// }));
-
-	// //SVG Fallback
-	// if(!Modernizr.svg) {
-	// 	$("img[src*='svg']").attr("src", function() {
-	// 		return $(this).attr("src").replace(".svg", ".png");
-	// 	});
-	// };
-
-	// //Аякс отправка форм
-	// //Документация: http://api.jquery.com/jquery.ajax/
-	// $("#form").submit(function() {
-	// 	$.ajax({
-	// 		type: "POST",
-	// 		url: "mail.php",
-	// 		data: $(this).serialize()
-	// 	}).done(function() {
-	// 		alert("Спасибо за заявку!");
-	// 		setTimeout(function() {
-				
-	// 			$("#form").trigger("reset");
-	// 		}, 1000);
-	// 	});
-	// 	return false;
-	// });
 
 	//Chrome Smooth Scroll
 	try {
@@ -97,13 +90,7 @@ $(document).ready(function() {
 
 	};
 
-	// $("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
 	
 });
 
-// $(window).load(function() {
-
-// 	$(".loader_inner").fadeOut();
-// 	$(".loader").delay(400).fadeOut("slow");
-
-// });
