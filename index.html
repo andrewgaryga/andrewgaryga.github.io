@@ -55,30 +55,42 @@
 	<section id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-offset-1 col-lg-3">
+				<div class="clouds">
+					<div class="cloud_1">
+						<img src="img/cloud1.png" alt="">
+					</div>
+
+					<div class="cloud_2">
+						<img src="img/cloud2.png" alt="">
+					</div>
+				</div>
+				<div class="col-sm-offset-1 col-sm-3 col-xs-4">
 					<ul class="head_text">
 						<li><a href="#header">andrewgaryga.com</a></li>
 					</ul>
 				</div>
 
-				<div class="col-lg-7">
+				<div class="col-sm-7 col-xs-8 sm_width">
 					<ul class="text-right">
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#portfolio" class="portfolio">Portfolio<img src="img/basic_case.png" alt="" class="show_hover"></a></li>
+						<li><a href="#education" class="education">Education<img src="img/basic_sheet_pencil.png" alt="" class="show_hover"></a></li>
+						<li><a href="#contact" class="contact">Contact<img src="img/basic_info.png" alt="" class="show_hover"></a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row">				
-				<div class="col-lg-offset-1 col-lg-3"><img src="img/photo.jpg" alt="my photo here" class="img-circle"> </div>
-				<div class="col-lg-7">
-					<h1>Hello, my name is Andrew Garyga, and I am web developer from Ukraine,</h1><p> I'm in love with responsive clean code and javascript.<br>
-					I will use my knowledge for your projects <i>with a lot of joy</i></p>
+				<div class="col-sm-7  col-sm-push-4">
+					<h1>Hello, my name is Andrew Garyga, and I am web developer from Ukraine,</h1><p><span class="small_screen_ls"> I'm in love with responsive clean code and javascript.</span><br>
+					<span class="small_screen_ls_s">I will use my knowledge for your projects <i>with a lot of joy.</i></span></p>
+				</div>
+				<div class="col-sm-offset-1 col-sm-3 col-sm-pull-7 xs_text_center">
+					<img src="img/photo.jpg" alt="my photo here" class="img-circle photo">
 				</div>
 			</div>
 			<hr>
 		</div>
+		
 
 	</section>	
 	
@@ -108,8 +120,11 @@
 	<div class="portfolio_wrap">
 		<div id="Container" class="container">
 			<div class="row  porfolio_wrap">
-				<div class="col-lg-4">   	  	
-					<div class="mix category-1" data-myorder="1">
+
+				<div class="col-lg-4 col-xs-6 col_custom_12">   	  	
+					<div class="mix category-1 category-2" data-myorder="1">
+
+					<div class="wrap">
 						<div class="portfolio-item">
 							<a href="#whalestudio" class="portfolio-link" data-toggle="modal">
 								<div class="caption">
@@ -121,10 +136,13 @@
 							</a>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-4">   	  	
-					<div class="mix category-1" data-myorder="1">
+					</div>
+				</div>
+		
+
+				<div class="col-lg-4 col-xs-6 col_custom_12">   	  	
+					<div class="mix category-1 category-2" data-myorder="1">
 						<div class="portfolio-item">
 							<a href="#velofan" class="portfolio-link" data-toggle="modal">
 								<div class="caption">
@@ -138,7 +156,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4">   	  	
+				<div class="col-lg-4 col-xs-6 col_custom_12">   	  	
 					<div class="mix category-2" data-myorder="1">
 						<div class="portfolio-item">
 							<a href="#prospekt" class="portfolio-link" data-toggle="modal">
@@ -168,10 +186,13 @@
 	<section id="education">
 		<div class="container">
 			<div class="row">
-				<h2 class="text-center">Education</h2>
-				<div class="col-lg-4 col-lg-push-7">
-					<p class="text-center">Graduaded at Chernihiv State Technological University.<br>Studying <i>at web.</i></p>
+				<div class="wrap">
+					<h2 class="text-center">Education</h2>
+					<div class="col-lg-4 col-lg-push-7">
+						<p class="text-center">Graduaded at Chernihiv State Technological University.<br>Studying <i>at web.</i></p>
+					</div>
 				</div>
+
 
 				<div class="col-lg-7 col-lg-pull-4">
 					<img src="img/knowledges/bootstrap_w3.jpg" alt="" class="">
@@ -190,16 +211,16 @@
 			<div class="row">
 				<hr>
 				<h2 class="text-center">Contact</h2>
-				<div class="col-lg-6 col-sm-12">
+				<div class="col-sm-6 col-xs-12">
 					<p class="form_title">Callback form</p>
 					<form role="form" class="form-horizontal form_border" id="form" action="//formspree.io/andrewgaryga@gmail.com" method="POST">
 						<fieldset>
 							<div class="form-group">
-								  <div class="col-lg-6 col-sm-6">
+								  <div class="col-sm-6 col-sm-6">
 									<label for="name" class="control-label" placeholder="Name">Your name:</label>
 									<input class="form-control" id="name" placeholder="Name" type="name">
 								  </div>
-								  <div class="col-lg-6 col-sm-6">
+								  <div class="col-sm-6 col-sm-6">
 									<label for="email" class="control-label">Email address</label>
 									<input class="form-control" id="email" placeholder="Email" type="email" name="_replyto">
 								  </div>
@@ -207,13 +228,13 @@
 
 							<div class="form-group">
 								<label class="col-sm-12 control-label text-left" for="message">Ask a question or leave a message</label>
-									<div class="col-lg-12 col-sm-12">
+									<div class="col-sm-12 col-sm-12">
 										<textarea class="form-control" id="message" rows="6" type="text" name="name"></textarea>
 									</div>
 							</div>
 
 							<div class="form-group">			
-								<div class="col-lg-6 col-sm-6 col-xs-6">
+								<div class="col-sm-6 col-sm-6 col-xs-6">
 									<button type="submit" value="Send" class="btn btn-default">Send a letter</button>		
 								</div>
 							</div>							
@@ -221,33 +242,33 @@
 					</form>
 				</div>
 
-				<div class="col-lg-offset-1 col-lg-4">
+				<div class="col-sm-offset-1 col-sm-5">
 					<p class="form_title">Contact Information:</p>
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<div class="row">
 								<div class="contact-item">
-									<div class="col-lg-2">
+									<div class="col-sm-2 col-xs-2">
 										<img src="img/skype.png" alt="">
 									</div>
-									<div class="col-lg-8"><p>pony.tale</p></div>
+									<div class="col-sm-8 col-xs-10"><p>pony.tale</p></div>
 								</div>								
 							</div>
 							<div class="row">
 								<div class="contact-item">
-									<div class="col-lg-2">
+									<div class="col-sm-2 col-xs-2">
 										<img src="img/gmail.png" alt="">
 									</div>
-									<div class="col-lg-8"><p>andrewgaryga@gmail.com</p></div>
+									<div class="col-sm-8 col-xs-10"><p>andrewgaryga@gmail.com</p></div>
 								</div>								
 							</div>
 							
 							<div class="row">
 								<div class="contact-item">
-									<div class="col-lg-2">
+									<div class="col-sm-2 col-xs-2">
 										<img src="img/vk.png" alt="">
 									</div>
-									<div class="col-lg-8"><a href="http://vk.com/id192918454"><p>vk.com/id192918454</p></a></div>
+									<div class="col-sm-8 col-xs-10"><a href="http://vk.com/id192918454"><p>vk.com/id192918454</p></a></div>
 								</div>								
 							</div>
 						</div>
@@ -261,13 +282,13 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-lg-offset-0">
+				<div class="col-sm-3 col-xs-11">
 						<ul class="head_text">
 							<li><a href="#home">andrewgaryga.com</a></li>
 						</ul>
 				</div>
 
-				<div class="col-lg-offset-4 col-lg-5">
+				<div class="col-lg-offset-4 col-lg-5 col-sm-offset-2 col-sm-7 col-xs-12">
 						<ul>
 							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#education">Education</a></li>
@@ -392,7 +413,7 @@
 							<p>You can visit this website from link on below.</p>
 							<ul class="list-inline item-details">
 								<li>Visit site:
-									<strong><a href="http://startbootstrap.com">whalestudio.com</a>
+									<strong><a href="http://andrewgaryga.github.io/whalestudio">whalestudio.com</a>
 									</strong>
 								</li>
 							</ul>
@@ -422,7 +443,7 @@
 							<p>Click to view full height picture or visit site from link on below</p>
 							<ul class="list-inline item-details">
 								<li>Visit site:
-									<strong><a href="http://startbootstrap.com">whalestudio.com</a>
+									<strong><a href="http://andrewgaryga.github.io/velofan/">velofan.com</a>
 									</strong>
 								</li>
 							</ul>
@@ -480,6 +501,5 @@
 	<script src="js/jquery.mixitup.js"></script>
 	
 
-	
 </body>
 </html>
