@@ -43,7 +43,7 @@ span.attention, button.attention, a.attention {
   color: #606060; }
 
 header h1 {
-  font-size: 3.113em;
+  font-size: 3.8125em;
   line-height: 1.26;
   color: #0e130a; }
   header h1 .attention-main {
@@ -68,7 +68,6 @@ header #panel {
     border: 1px solid #E7E7E7;
     padding: 0; }
   header #panel .lb {
-    display: none;
     position: absolute;
     width: 40px;
     height: 100%;
@@ -196,12 +195,5 @@ footer {
     opacity: 1; }
 .modal .modal-footer {
   border-top: none; }
-
-@media screen and (min-width: 384px) {
-  header h1 {
-    font-size: 3.8125em; } }
-@media screen and (min-width: 900px) {
-  header #panel .lb {
-    display: inherit; } }
 
 /*# sourceMappingURL=style.css.map */
