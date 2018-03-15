@@ -84,7 +84,7 @@ header #panel {
     margin-top: 2em; }
 
 #portfolio ul {
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
   margin-top: 2em; }
 #portfolio hr {
   margin-top: 3em; }
@@ -95,7 +95,7 @@ header #panel {
     text-decoration: underline;
     color: #606060; }
 #portfolio .mix {
-  margin-bottom: 2em; }
+  margin: 0.5em; }
 
 #contact-form {
   margin-top: 1.5em; }
